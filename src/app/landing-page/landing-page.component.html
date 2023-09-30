@@ -1,0 +1,187 @@
+<div class="home-div">
+  <div class="welcome-div">
+    <div class="head-div">
+      <div class="logo-div">
+        <img src="../../assets/images/netflix-logo.svg" alt="">
+      </div>
+      <div class="sign-in-div">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>English</option>
+          <option value="1">Hindi</option>
+        </select>
+        <button type="button" class="btn sign-in-btn">Sign In</button>
+      </div>
+    </div>
+    <div class="welcome-form-div">
+      <div>
+        <h1>
+          The biggest Indian hits. The best Indian stories. All streaming here.
+        </h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <div class="form-div">
+          <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+          <div class="input-btn-div">
+            <div class="input-div">
+              <label for="email" class="email-label" [ngClass]="{'is-focus': isFocus}">Email address</label>
+              <input type="text" class="form-control" (focus)="focusInput()" (focusout)="focusOut()">
+            </div>
+            <div class="btn-div">
+              <button type="submit" class="btn">Get Started <img src="../../assets/images/arrow.svg"
+                  alt="Arrow Icon"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img
+      src="https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+      alt="Home page image" width="100%" height="100%" class="welcome-img">
+  </div>
+  <div class="enjoy-div">
+    <div class="enjoy-inside-div row align-items-center">
+      <div class="enjoy-text-div col-lg-6">
+        <h2>Enjoy on your TV</h2>
+        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+      </div>
+      <div class="tv-div col-lg-6">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV Image"
+          width="100%" height="100%">
+        <div class="video-div">
+          <video muted autoplay loop>
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="download-div">
+    <div class="download-inside-div row align-items-center flex-column-reverse flex-lg-row">
+      <div class="downloading-img-div col-lg-6">
+        <img class="movie-mobile-img"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+          alt="Mobile Image">
+        <div class="movie-div">
+          <div class="text-and-pic">
+            <div class="movie-img">
+              <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                alt="Movie Image">
+            </div>
+            <div class="movie-name">
+              <p>Stranger Things</p>
+              <p>Downloading...</p>
+            </div>
+          </div>
+          <div class="download-gif">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
+              alt="Download Gif">
+          </div>
+        </div>
+      </div>
+      <div class="download-text-div col-lg-6">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favourites easily and always have something to watch.</p>
+      </div>
+    </div>
+  </div>
+  <div class="enjoy-div">
+    <div class="enjoy-inside-div row align-items-center">
+      <div class="enjoy-text-div col-lg-6">
+        <h2>Watch everywhere</h2>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+      </div>
+      <div class="tv-div col-lg-6">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+          alt="TV Image" width="100%" height="100%">
+        <div class="watch-video-div">
+          <video muted autoplay loop>
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="download-div">
+    <div class="download-inside-div row align-items-center flex-column-reverse flex-lg-row">
+      <div class="downloading-img-div col-lg-6">
+        <img class="movie-mobile-img"
+          src="https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+          alt="Mobile Image">
+      </div>
+      <div class="download-text-div col-lg-6">
+        <h2>Create profiles for kids</h2>
+        <p>Send children on adventures with their favourite characters in a space made just for them—free with your
+          membership.</p>
+      </div>
+    </div>
+  </div>
+  <div class="faq-div">
+    <div class="faq-inside-div">
+      <h2>Frequently Asked Questions</h2>
+      <div class="questions-div">
+        <div class="qa-div">
+          <div class="question-div" (click)="answerClick()">
+            <p>What is Netflix?</p>
+            <p>+</p>
+          </div>
+          <div class="answer-div" *ngIf="answerShow">
+            <p>
+              Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+              documentaries and more – on thousands of internet-connected devices. You can watch as much as you want,
+              whenever you want, without a single ad – all for one low monthly price. There's always something new to
+              discover, and new TV shows and movies are added every week!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form-div">
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+        <div class="input-btn-div">
+          <div class="input-div">
+            <label for="email" class="email-label" [ngClass]="{'is-focus': isFocus}">Email address</label>
+            <input type="text" class="form-control" (focus)="focusInput()" (focusout)="focusOut()">
+          </div>
+          <div class="btn-div">
+            <button type="submit" class="btn">Get Started <img src="../../assets/images/arrow.svg"
+                alt="Arrow Icon"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-div">
+    <div class="footer-inside-div">
+      <p>Questions? Call <a href="">000-800-919-1694</a></p>
+      <div class="links-div">
+        <div class="box-div">
+          <a href="">FAQ</a>
+          <a href="">Investor Relations</a>
+          <a href="">Privacy</a>
+          <a href="">Speed Test</a>
+        </div>
+        <div class="box-div">
+          <a href="">Help Centre</a>
+          <a href="">Jobs</a>
+          <a href="">Cookie Preferences</a>
+          <a href="">Legal Notices</a>
+        </div>
+        <div class="box-div">
+          <a href="">Account</a>
+          <a href="">Ways to Watch</a>
+          <a href="">Corporate Information</a>
+          <a href="">Only on Netflix</a>
+        </div>
+        <div class="box-div">
+          <a href="">Media Centre</a>
+          <a href="">Terms of Use</a>
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+      <select class="form-select lang-select" aria-label="Default select example">
+        <option selected>English</option>
+        <option value="1">Hindi</option>
+      </select>
+      <p class="copy-right">Netflix India</p>
+    </div>
+  </div>
+</div>

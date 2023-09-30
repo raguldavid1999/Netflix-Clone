@@ -1,0 +1,333 @@
+@font-face{
+  font-display: optional;
+  font-family: NetflixBold;
+  src: url('../../assets/fonts/NetflixSans-Bold.otf')
+}
+.home-div{
+  position: relative;
+}
+.welcome-div{
+  padding: 20px;
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  position: relative;
+  .welcome-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .head-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .logo-div img{
+      width: 150px;
+    }
+    .sign-in-div{
+      display: flex;
+      .btn{
+        background-color: #E50914;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        width: 150px;
+      }
+    }
+  }
+  .welcome-form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    color: #fff;
+    text-align: center;
+    h1{
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: -2px;
+    }
+    p{
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 10px 0 0 0;
+    }
+  }
+}
+.is-focus{
+  font-size: 0.75rem !important;
+  top: 0.35rem !important;
+}
+
+.enjoy-div{
+  background-color: #000000;
+  color: #fff;
+  padding: 4rem 2rem;
+  border-top: 7px solid #232323;
+  h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .tv-div{
+    position: relative;
+    img{
+      position: relative;
+      z-index: 5;
+    }
+    .watch-video-div{
+      position: absolute;
+      left: 20%;
+      top: 8%;
+      width: 60%;
+      video{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .video-div{
+      position: absolute;
+      left: 15%;
+      top: 20%;
+      width: 75%;
+      video{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+.download-div{
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 4rem 2rem;
+  border-top: 7px solid #232323;
+  h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .download-inside-div{
+    width: 100%;
+    .downloading-img-div{
+      position: relative;
+    }
+  }
+  .movie-mobile-img{
+    width: 100%;
+  }
+  .movie-div{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+    background-color: #000000;
+    // align-items: center;
+    height: 100px;
+    width: 60%;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    .text-and-pic{
+      display: flex;
+    }
+    p{
+      font-size: 14px;
+      margin: 0;
+    }
+    img{
+      height: 100%;
+    }
+    .movie-name{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-left: 15px;
+      p:first-child{
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      p:last-child{
+        font-size: 0.875rem;
+        color: #0071eb;
+      }
+    }
+    .download-gif{
+      padding: 10px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.faq-div{
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 4rem 2rem;
+  border-top: 7px solid #232323;
+  h2{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .answer-div{
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: rgb(45,45,45);
+    border-top: 1px solid #000;
+    transition: all 1s linear;
+  }
+  .questions-div{
+    margin-top: 20px;
+  }
+  .question-div{
+    background-color: rgb(45,45,45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+    p{
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+  .question-div:hover{
+    background-color: rgb(65,65,65);
+  }
+}
+.form-div{
+  margin: 1.5rem 0 0;
+  h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+.input-btn-div{
+  width: 100%;
+  display: flex;
+  max-width: 36.625rem;
+  margin: 1rem auto 0;
+  .input-div{
+    margin-right: 10px;
+    width: 100%;
+    height: 56px;
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    overflow: hidden;
+    border: 1px solid rgba($color: #FFFFFF, $alpha: 0.3);
+    border-radius: 5px;
+    label{
+      color: rgba($color: #FFFFFF, $alpha: 0.7);
+      font-size: 1rem;
+      position: absolute;
+      z-index: 1;
+      top: 1rem;
+      left: 1rem;
+      transition: all 0.2s linear;
+    }
+    input{
+      position: relative;
+      z-index: 3;
+      margin-top: 5px;
+      color: #fff;
+      padding-bottom: 0;
+      border: none;
+      background-color: rgba($color: #000000, $alpha: 0);
+      height: 100%;
+    }
+    input:focus{
+      outline: none !important;
+      border: none !important;
+      box-shadow: none;
+    }
+  }
+}
+.btn-div{
+  width: 45%;
+  .btn{
+    display: flex;
+    align-items: center;
+    background-color: #E50914;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+.footer-div{
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 4rem 2rem;
+  border-top: 7px solid #232323;
+  a{
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .links-div{
+    display: flex;
+    .box-div{
+      display: grid;
+      padding-right: 10%;
+    }
+  }
+}
+select{
+  width: 150px;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+select:focus{
+  outline: 1px solid #fff;
+}
+.lang-select{
+  margin-top: 20px;
+}
+.copy-right{
+  margin-top: 20px;
+}
+@media(min-width:960px){
+  .head-div , .welcome-form-div{
+    width: 75% !important;
+    margin: auto;
+  }
+  .enjoy-inside-div{
+    width: 75%;
+    margin: auto;
+  }
+  .download-inside-div{
+    width: 75% !important;
+    margin: auto;
+  }
+  .footer-inside-div{
+    width: 75% !important;
+    margin: auto;
+  }
+  .faq-inside-div{
+    width: 75% !important;
+    margin: auto;
+  }
+}
